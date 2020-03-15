@@ -2,23 +2,23 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-const Layout = () => import('./views/layout')
-const home = () => import('./views/home')
-const question = () => import('./views/question')
-const video = () => import('./views/video')
-const user = () => import('./views/user')
-const chat = () => import('./views/user/chat')
-const login = () => import('./views/login')
-const profile = () => import('./views/user/profile')
-const search = () => import('./views/search')
-const searchresult = () => import('./views/search/result')
-const article = () => import('./views/article')
+const Layout = () => import('../views/layout')
+const home = () => import('../views/home')
+const question = () => import('../views/question')
+const video = () => import('../views/video')
+const user = () => import('../views/user')
+const chat = () => import('../views/user/chat')
+const login = () => import('../views/login')
+const profile = () => import('../views/user/profile')
+const search = () => import('../views/search')
+const searchresult = () => import('../views/search/result')
+const article = () => import('../views/article')
 const routes = [
   {
     path: '/',
     component: Layout,
     children: [{
-      path: '',
+      path: '/',
       component: home
     }, {
       path: '/question',
